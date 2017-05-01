@@ -1,0 +1,96 @@
+body {
+  max-width: 48em;
+  margin: auto;
+  padding: 1em 0;
+}
+
+header h1 {
+  display: none;
+}
+
+h2 {
+  margin-top: 1.5em;
+  border-bottom: 1px solid;
+}
+
+header img {
+  display: block;
+  margin: auto;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+dd ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sessions dt {
+  margin-bottom: 0;
+}
+
+#sessions dd {
+  border: 1px solid;
+  margin: 0;
+  padding: 10px 40px;
+}
+
+#sessions dd + dt {
+  margin-top: 1em;
+}
+
+#archives li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+
+/**
+ * color scheme
+ */
+
+.nerd {
+  font-family: monospace;
+  font-size: 14px;
+  background-color: #da7;
+  color: #111;
+}
+
+.nerd a,
+.nerd a:visited {
+  color: #266;
+  text-decoration: underline;
+}
+
+.nerd a:hover {
+  color: #288;
+  text-decoration: underline;
+}
+
+.nerd #sessions dt {
+  color: #266;
+}
+
+.nerd #sessions dd {
+  background-color: #e95;
+  border-color: #966;
+  color: #222;
+}
+
+/**
+ * Media queries for mobile
+ */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+    #fork-me {
+        display: none;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+}
