@@ -1,191 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <!-- highly inspired by the TupperVim.org website -->
 <html class="nerd" lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TupperRust</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>TupperRust</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-</head>
+  <body>
+    <a id="fork-me" href="https://github.com/TupperRust/tupperrust.github.io"
+      ><img
+        style="position: absolute; top: 0; right: 0; border: 0"
+        src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+        alt="Fork me on GitHub"
+        data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+    /></a>
 
-<body>
+    <header>
+      <img
+        src="TupperRustlogo.svg"
+        onerror="this.src='TupperRustlogo.png'"
+        alt="TupperRust"
+      />
+      <h1>TupperRust</h1>
+      <p>
+        Les TupperRust sont des évènements autour du langage
+        <a href="https://www.rust-lang.org/fr-FR/">Rust</a>.
+      </p>
+      <p>
+        Le déroulement varie à chacun de ces évènements, mais en général
+        commence par une partie présentation.
+      </p>
+    </header>
 
-  <a id="fork-me" href="https://github.com/TupperRust/tupperrust.github.io"><img style="position: absolute; top: 0;
-    right: 0; border: 0;"
-      src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
-      alt="Fork me on GitHub"
-      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+    <section id="sessions">
+      <h2>Prochaines sessions</h2>
+      <dl>
+        <dt>Grenoble</dt>
+        <dd>
+          le <strong>jeudi 14 novembre 2024 à partir de 18:30</strong> dans les
+          locaux de
+          <div>
+            <strong>
+              <a href="https://www.agap2.fr/contact/">Agap2IT</a> :<br />
+            </strong>
+            <a href="https://www.openstreetmap.org/node/1518054693"
+              >10, avenue Doyen Louis Weil, 38330 Grenoble
+            </a>
+          </div>
+          <br />
+          <div>
+            Merci de vous inscrire sur
+            <a
+              href="https://www.meetup.com/tupperlibre/events/303687040/"
+              rel="nofollow"
+              >Meetup</a
+            >.
+          </div>
+          <br />
+        </dd>
+      </dl>
+    </section>
 
-  <header>
-    <img src="TupperRustlogo.svg" onerror="this.src='TupperRustlogo.png'" alt="TupperRust" />
-    <h1>TupperRust</h1>
-    <p>Les TupperRust sont des évènements autour du langage <a href="https://www.rust-lang.org/fr-FR/">Rust</a>.</p>
-    <p>
-      Le déroulement varie à chacun de ces évènements, mais en général commence
-      par une partie présentation.
-    </p>
-  </header>
+    <section id="qui">
+      <h2>Qui ?</h2>
+      <p>
+        Quiconque intéressé•e pour s'initier à Rust et à son environnement, pour
+        progresser ou pour aider ses camarades est le bienvenu.
+      </p>
+      <p>
+        Aussi, qui que vous soyez, merci de bien lire le code de conduite du
+        language Rust que nous demandons de respecter.
+      </p>
+    </section>
 
-  <section id="sessions">
-    <h2>Prochaines sessions</h2>
-    <dl>
-      <dt>Grenoble</dt>
-      <dd> le <strong>mercredi 13 mars 2024 à partir de 19:00</strong> dans les locaux de
-        <div>
-          <strong>
-            <a href="https://turbine.coop/">Kaizen Solutions</a> :<br />
-          </strong>
-          <a href="https://www.openstreetmap.org/node/6409086528">26, avenue Jean Kuntzmann, 38330
-            Montbonnot-Saint-Martin </a>
-        </div>
-        <br />
-        <div>
-          Merci de vous inscrire sur
-          <a href="https://www.meetup.com/tupperlibre/events/299197015/" rel="nofollow">Meetup</a>.
-        </div>
-        <br />
-        <div><strong>Chacun amène à manger et à boire</strong></div>
-      </dd>
-    </dl>
-  </section>
-
-  <section id="qui">
-    <h2>Qui ?</h2>
-    <p>
-      Quiconque intéressé•e pour s'initier à Rust et à son environnement, pour
-      progresser ou pour aider ses camarades est le bienvenu.
-    </p>
-    <p>
-      Aussi, qui que vous soyez, merci de bien lire le code de conduite du
-      language Rust que nous demandons de respecter.
-    </p>
-  </section>
-
-  <section id="comment">
-    <h2>Comment ? (le principe)</h2>
-    <div>
-      Pour la prochaine séance:
+    <section id="comment">
+      <h2>Comment ? (le principe)</h2>
+      <div>
+        Pour la prochaine séance:
+        <ul>
+          <li>Introduction à Rust</li>
+          <li>
+            <strong
+              >Programme en cours de construction (n'hésitez pas à nous
+              contacter si vous souhaitez faire un petit talk)</strong
+            >
+          </li>
+        </ul>
+      </div>
+      <p>
+        Lors des précédentes sessions, nous avons expérimenté, accompagnés de
+        présentations pour les débutants :
+      </p>
       <ul>
         <li>
-          Introduction à Rust par Paco Velobs
+          Le 13 mars 2024 à Kaizen Solutions à Montbonnot-Saint-Martin
+          <ul>
+            <li>Introduction à Rust par Paco Velobs</li>
+            <li>
+              La gestion d'erreur native et avec thiserror par Bastien Sevajol
+            </li>
+            <li>
+              Les types énumérés et le polymorphisme en Rust par Julien Buissart
+              Dubois
+            </li>
+          </ul>
         </li>
         <li>
-          La gestion d'erreur native et avec thiserror par Bastien Sevajol
+          Le 11 janvier 2024 à l Turbine Coop. Grenoble
+          <ul>
+            <li>Une introduction aux bases du langage</li>
+            <li>
+              L'écosystème pour créer des programmes CLI et un détour par le
+              build system,
+            </li>
+            <li>
+              L'allocation dynamique à destination des habitués d'autres
+              langages bas niveau tel que le C,
+            </li>
+          </ul>
         </li>
         <li>
-          Les types énumérés et le polymorphisme en Rust par Julien Buissart Dubois
+          Le 30 novembre 2023 à Grenoble : <br />
+          Afin de rentrer directement dans le vif du sujet et ne pas nous
+          endormir sur la théorie, la soirée sera orchestrée autour d'une
+          application écrite par Gwennan, Léo (pseudo Nuclear Squid) et Pablo
+          afin d'introduire le langage, ses idiomes et bonnes pratiques à
+          destination de celles et ceux n'ayant jamais vu une ligne de Rust .
+          Vous repartirez avec les bases pour créer vos premiers programmes CLI
+          et des conseils pour approfondir le sujet, voir même présenter vos
+          découvertes la prochaine fois!
+        </li>
+        <li>Des revues de code (session de février 2017 Lyon) ;</li>
+        <li>Des TP (session des JdLL 2017 Lyon) ;</li>
+
+        <li>Un hackathon (session session de mai 2017 Lyon) ;</li>
+        <li>Un Randori (pour la session à janvier 2018 Lyon) ;</li>
+        <li>
+          Pour la prochaine session : une présentation d'éléments spécifiques du
+          langage, de quelques modules et nous suggérerons un travail en groupe
+          pour mieux comprendre le langage ;
         </li>
       </ul>
-    </div>
-    <p>
-      Lors des précédentes sessions, nous avons expérimenté, accompagnés de présentations pour les débutants :
-    </p>
-    <ul>
-      <li>
-        Le 11 janvier 2024 à l Turbine Coop. Grenoble
-        <ul>
-          <li>
-            Une introduction aux bases du langage
-          </li>
-          <li>
-            L'écosystème pour créer des programmes CLI et un détour par le build system,
-          </li>
-          <li>
-            L'allocation dynamique à destination des habitués d'autres langages bas niveau tel que le C,
-          </li>
-        </ul>
-      </li>
-      <li>
-        Le 30 novembre 2023 à Grenoble : <br />
-        Afin de rentrer directement dans le vif du sujet et ne pas nous
-        endormir sur la théorie, la soirée sera orchestrée autour d'une
-        application écrite par Gwennan, Léo (pseudo Nuclear Squid) et Pablo
-        afin d'introduire le langage, ses idiomes et bonnes pratiques à
-        destination de celles et ceux n'ayant jamais vu une ligne de Rust .
-        Vous repartirez avec les bases pour créer vos premiers programmes CLI
-        et des conseils pour approfondir le sujet, voir même présenter vos
-        découvertes la prochaine fois!
-      </li>
-      <li>
-        Des revues de code (session de février 2017 Lyon) ;
-      </li>
-      <li>
-        Des TP (session des JdLL 2017 Lyon) ;
-      <li>
-        Un hackathon (session session de mai 2017 Lyon) ;
-      </li>
-      <li>
-        Un Randori (pour la session à janvier 2018 Lyon) ;
-      </li>
-      <li>
-        Pour la prochaine session : une présentation d'éléments spécifiques du langage, de quelques modules et nous
-        suggérerons un travail en groupe pour mieux comprendre le langage ;
-      </li>
-    </ul>
-  </section>
+    </section>
 
-  <section id="pourquoi">
-    <h2>Pourquoi ?</h2>
-    <p>Pour citer la page d'accueil du site <a href="https://rust-lang.org">rust-lang.org</a></p>
-    <p>
-      « Rust est un langage de programmation système ultra-rapide, qui
-      prévient les erreurs de segmentation et garantit la sûreté entre threads. »
-    </p>
-    <p>
-      Il est à la fois destiné aux experts comme aux débutants. Via ses
-      concepts et son compilateur, beaucoup de pièges existants dans d'autres
-      languages sont évités (comme l'accès au pointeur Null).
-    </p>
-    <p>
-      Quoique déroutant de prime-abord (les débutants ont toujours des
-      difficultés avec le compilateur), il devient de plus en plus aisé avec le
-      temps de le comprendre et de le voir comme un accompagnateur.
-    </p>
-    <p>
-      C'est la raison d'être de cette communauté : faire monter en compétence
-      chacun d'entre nous pour voir émerger de supers projets.
-    </p>
-  </section>
+    <section id="pourquoi">
+      <h2>Pourquoi ?</h2>
+      <p>
+        Pour citer la page d'accueil du site
+        <a href="https://rust-lang.org">rust-lang.org</a>
+      </p>
+      <p>
+        « Rust est un langage de programmation système ultra-rapide, qui
+        prévient les erreurs de segmentation et garantit la sûreté entre
+        threads. »
+      </p>
+      <p>
+        Il est à la fois destiné aux experts comme aux débutants. Via ses
+        concepts et son compilateur, beaucoup de pièges existants dans d'autres
+        languages sont évités (comme l'accès au pointeur Null).
+      </p>
+      <p>
+        Quoique déroutant de prime-abord (les débutants ont toujours des
+        difficultés avec le compilateur), il devient de plus en plus aisé avec
+        le temps de le comprendre et de le voir comme un accompagnateur.
+      </p>
+      <p>
+        C'est la raison d'être de cette communauté : faire monter en compétence
+        chacun d'entre nous pour voir émerger de supers projets.
+      </p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li> Liste de diffusion mail :
-        <a rel="nofollow" href="https://framalistes.org/sympa/info/tupperrust">tupperrust@framalistes.org</a>
-      </li>
-      <li> Discord :
-        <a rel="nofollow" href="https://discord.gg/4dfFnCGCPS">Lien d'invitation</a>
-      </li>
-      <li> Meetup :
-        <a rel="nofollow" href="https://www.meetup.com/tupperlibre/">TupperLibre</a>
-      </li>
-      <li> Twitter :
-        <a rel="nofollow" href="https://twitter.com/TupperRust">@TupperRust</a>
-      </li>
-    </ul>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          Liste de diffusion mail :
+          <a rel="nofollow" href="https://framalistes.org/sympa/info/tupperrust"
+            >tupperrust@framalistes.org</a
+          >
+        </li>
+        <li>
+          Discord :
+          <a rel="nofollow" href="https://discord.gg/4dfFnCGCPS"
+            >Lien d'invitation</a
+          >
+        </li>
+        <li>
+          Meetup :
+          <a rel="nofollow" href="https://www.meetup.com/tupperlibre/"
+            >TupperLibre</a
+          >
+        </li>
+        <li>
+          Twitter :
+          <a rel="nofollow" href="https://twitter.com/TupperRust"
+            >@TupperRust</a
+          >
+        </li>
+      </ul>
+    </section>
 
-  <section id="liens">
-    <h2>Liens</h2>
-    <dl>
-      <dt> Tutoriels </dt>
-      <dd>
-        <ul>
-          <li> <a rel="nofollow" href="http://intorust.com/">into_rust(): Screencasts pour apprendre Rust [en]</a> </li>
-          <li> <a rel="nofollow" href="https://doc.rust-lang.org/book/ownership.html">Le livre officiel pour apprendre
-              le langage [en]</a> </li>
-          <li> <a rel="nofollow" href="https://blog.guillaume-gomez.fr/Rust/">Tutoriel en Français</a></li>
-        </ul>
-      </dd>
-      <dt> Présentations avec slides </dt>
-      <dd>
-        <ul>
-          <li>N'hésitez pas à nous proposer une présentation avec des slides :-) . </li>
-        </ul>
-      </dd>
-    </dl>
-  </section>
-</body>
-
+    <section id="liens">
+      <h2>Liens</h2>
+      <dl>
+        <dt>Tutoriels</dt>
+        <dd>
+          <ul>
+            <li>
+              <a rel="nofollow" href="http://intorust.com/"
+                >into_rust(): Screencasts pour apprendre Rust [en]</a
+              >
+            </li>
+            <li>
+              <a
+                rel="nofollow"
+                href="https://doc.rust-lang.org/book/ownership.html"
+                >Le livre officiel pour apprendre le langage [en]</a
+              >
+            </li>
+            <li>
+              <a rel="nofollow" href="https://blog.guillaume-gomez.fr/Rust/"
+                >Tutoriel en Français</a
+              >
+            </li>
+          </ul>
+        </dd>
+        <dt>Présentations avec slides</dt>
+        <dd>
+          <ul>
+            <li>
+              N'hésitez pas à nous proposer une présentation avec des slides :-)
+              .
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+  </body>
 </html>
