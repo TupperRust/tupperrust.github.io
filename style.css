@@ -28,6 +28,13 @@ dd ul {
   padding: 0;
 }
 
+code {
+  color: grey;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
 #sessions dt {
   margin-bottom: 0;
 }
